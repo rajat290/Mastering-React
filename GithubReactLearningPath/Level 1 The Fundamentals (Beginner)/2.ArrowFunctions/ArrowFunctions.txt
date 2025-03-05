@@ -1,0 +1,59 @@
+Arrow fuctions => are a shorter and cleaner way to write java script fucntions it indroduced in ES6 , they provide lexical scoping for this 
+and remove the need for the function keyword 
+
+📌 Why are Arrow Functions Used?
+=====================================
+Arrow functions are used for several reasons:
+shorter syntax = Reduce boiler plate code 
+lexical scoping =  make it easier to manage the scope of variables
+implicit return for single expressions , arrow functions return values without needing {} or return 
+ No this Binding Issue: In regular functions, this depends on how the function is called. Arrow functions inherit this from their surrounding scope.
+
+ 📌 How to Use Arrow Functions
+ =====================================
+function greet (name){
+    return `Hello, ${name}!`;
+}
+it is a traditional way to write Functions is javaScript 
+
+const greet = (name) => return `Hello, ${name}!`;
+//it is a arrow function way to write Functions in javaScript
+console.log(greet("Rajat"));
+
+
+ArrowFunctions with multiple parameters 
+=====================================
+const greet = (name, age) => `Hello, ${name}! You are ${age} years old.`;
+
+3️⃣ Arrow Function with No Parameters
+=====================================
+const greet = () => "Hello World";
+console.log(greet());
+📌 Explanation: If no parameters, use empty ().
+
+4️⃣ Arrow Function with Block Body
+=====================================
+const greet = (name) => {
+    if (name === "Rajat");
+    return "Hello, Rajat!";
+    return "Hello, " + name + "!";
+}
+console.log(greet (name));
+
+5️⃣ Arrow Functions and this (Lexical Scoping)
+=====================================
+const user = {
+    name: "Rajat";
+    greet: fucntion(){
+        setTimeout(() =>{
+             console.log(`Hello, ${this.name}!`);
+}, 1000);
+        }
+        
+    };
+    user.greet();
+   📌 Explanation:
+
+Traditional functions create their own this, causing issues inside setTimeout().
+Arrow functions inherit this from user and correctly access user.name.
+ 

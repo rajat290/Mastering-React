@@ -1,0 +1,15 @@
+ let and const in Javascript are used to declare a varibale >>>> replacing var to improve scoping and prevent common errors.
+
+let: Declares a variable that can be reassigned but is block-scoped.
+const: Declares a constant variable that cannot be reassigned and is block-scoped.
+
+
+📌 Why are let & const used?
+Before ES6, JavaScript only had var, which had function scope and led to issues like:
+
+Variables leaking out of loops and conditionals.
+Unexpected variable overrides.
+With let and const, we get: ✅ Block Scope: Variables are only accessible inside the block {} where they are defined.
+✅ Better Readability: Prevents accidental variable reassignments.
+✅ Safer Code: const ensures values don't change unintentionally.
+
