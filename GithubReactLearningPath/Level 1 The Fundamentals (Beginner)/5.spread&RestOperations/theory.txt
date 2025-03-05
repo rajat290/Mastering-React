@@ -1,0 +1,10 @@
+📌 Definition:
+The spread (...) and rest (...) operators are three-dot syntax introduced in ES6.
+
+Spread Operator (...): Expands arrays/objects into individual elements.
+Rest Operator (...): Collects multiple elements into a single array or object.
+
+
+ How to Use Spread (...) Operator?
+ =====================================
+ see on example file

@@ -1,0 +1,8 @@
+Destructuring is a feature in ES6 that allows you to unpack values from arrays and objects into separate variables easily and efficiently
+
+ Why is Destructuring Used?
+✅ Simplifies Code: Reduces the need for repetitive object.property or array[index] access.
+✅ Improves Readability: Makes variable assignments cleaner and more structured.
+✅ Extracts Only Required Values: Allows selective extraction of needed properties/values.
+✅ Useful in Function Arguments: Helps pass object properties as function parameters efficiently.
+
