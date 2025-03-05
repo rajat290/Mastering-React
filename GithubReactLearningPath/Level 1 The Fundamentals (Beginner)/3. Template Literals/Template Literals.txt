@@ -1,0 +1,16 @@
+template literals also called template strings are a features introduced in ES6 that allow embediing expressions inside string literals using backticks ( ` ) instead of quotes ( ' or ")
+
+They also supports multiline strings and string interpoltion 
+
+📌 Why are Template Literals Used?
+Template literals are used to create dynamic strings that can be used in various scenarios such as logging, debugging
+, and user interface development.
+
+String interpoltion: allows inserting varibales and expressionsdirectly inside strings using ${}.
+Multi- line Strings: Eliminates the need for \n to create multi line text 
+ Improved Readability: No need for concatenation (+ operator).
+
+ 📌 How to Use Template Literals
+Template literals are used by wrapping the string in backticks ( ` ) and using ${} to insert
+
+example in templateLiterals.js
