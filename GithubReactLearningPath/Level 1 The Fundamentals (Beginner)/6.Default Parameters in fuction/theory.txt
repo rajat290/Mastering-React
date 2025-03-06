@@ -1,0 +1,7 @@
+Default parameters allow us to assign default values to function parameters if no value is passed or if undefined is provided.
+
+ Why Are Default Parameters Used?
+✅ Avoids undefined values when arguments are missing.
+✅ Provides fallback values without extra conditions (if checks).
+✅ Enhances function flexibility by handling optional parameters.
+
