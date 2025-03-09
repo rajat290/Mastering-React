@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <h1 className="text-red-600 bg-amber-400" >TailwindCss</h1>
+     <h1 className="text-red-600 bg-amber-400 border-x-yellow-50" >TailwindCss</h1>
     </>
   )
 }
