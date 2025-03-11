@@ -1,0 +1,9 @@
+ What is the Key Attribute in React?
+ In React, the key attribute is a special string attribute used to give a unique identity to each element in a list of items (like array items).
+It helps React identify which items changed, added, or removed in a list when rendering elements.
+Keys should be unique for each element to avoid unnecessary re-rendering and improve performance.
+
+✅ 👉 Why Do We Need a Key in React Lists?
+When React renders a list of items, it needs a way to differentiate between each element.
+If an element changes, React uses the key attribute to know which element changed and update only that element instead of re-rendering the whole list.
+This significantly improves performance in React.

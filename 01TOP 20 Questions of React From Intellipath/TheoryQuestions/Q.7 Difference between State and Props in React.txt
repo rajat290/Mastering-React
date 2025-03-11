@@ -1,0 +1,47 @@
+What is the Difference Between State and Props in React?
+Both state and props are used to store and manage data in React, but they serve different purposes:
+
+
+✅ State in React:
+Definition:
+State is a local data structure that belongs to the component and can be changed or updated within that component.
+It allows a component to track and modify data and trigger UI re-render when it changes.
+Mutability:
+State is mutable, meaning it can change over time, typically based on user interactions, events, or lifecycle methods.
+Scope:
+State is local to the component in which it is defined. It cannot be directly accessed outside the component.
+Usage:
+State is used for data that changes over time and is necessary for interactive features like form inputs, toggles, counters, etc.
+
+
+Props in React:
+Definition:
+Props (short for "properties") are read-only data passed from parent to child components.
+Props allow components to receive data from other components to make them dynamic and reusable.
+Mutability:
+Props are immutable, meaning the child component cannot modify the data received via props. Only the parent component can modify them.
+Scope:
+Props are global to the component where they are passed and can be accessed anywhere within the component.
+Usage:
+Props are used to pass data to child components or to set initial values for certain properties that a child component will use.
+
+ 👉 Key Differences:
+Aspect	State	Props
+Mutability	State is mutable (can be changed)	Props are immutable (cannot be changed by the child)
+Data Source	Managed within the component itself	Passed down from the parent component to the child
+Update Mechanism	State is updated with setState() or hooks	Props cannot be updated directly by the child component
+Scope	Local to the component where it's defined	Available throughout the component tree (parent to child)
+Purpose	Used for interactive and dynamic data	Used for data passing and making components reusable
+Re-render Trigger	State change triggers a re-render of the component	Changing props in the parent triggers a re-render in the child
+
+✅ 👉 When to Use State and When to Use Props?
+Scenario	State	Props
+User Input	Use state to store user input (e.g., form data, search query).	Use props to pass data from parent to child.
+Dynamic Content	Use state to track changes in dynamic content (e.g., count, toggle).	Use props for static or passed data.
+Rendering List of Items	Use state to manage an array of items that can change.	Use props to pass an array of items to child components.
+Component Reusability	N/A (state is often specific to a component).	Use props to reuse components with different data.
+
+
+ 👉 Key Takeaways
+State: Local to the component, mutable, used for interactive data that changes over time.
+Props: Passed down from parent to child components, immutable, used for passing data and making components dynamic and reusable.

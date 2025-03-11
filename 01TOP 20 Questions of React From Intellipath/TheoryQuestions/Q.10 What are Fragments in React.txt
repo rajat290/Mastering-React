@@ -1,0 +1,26 @@
+✅ 👉 What is a Fragment in React?
+Fragments in React are a lightweight way to group multiple elements without adding extra nodes (like <div>) to the DOM.
+In React, you often return multiple elements from a component. Instead of wrapping them in a <div>, you can use Fragments to avoid adding unnecessary nodes to the DOM.
+This helps in keeping the HTML cleaner and avoids unnecessary div containers.
+
+✅ 👉 Why Do We Use Fragments?
+When you return multiple JSX elements from a React component, React requires them to be wrapped in a single parent element.
+If you use a <div> as a wrapper, it can add unnecessary nodes to the DOM, causing unwanted nesting.
+Using a Fragment (<React.Fragment> or <> </>) helps you group elements without adding an extra parent element in the DOM.
+
+✅ 👉 Why Should We Use Fragments Instead of Divs?
+Aspect	Using <div>	Using <React.Fragment> or <>
+DOM Structure	Adds an extra <div>	No extra element in DOM
+CSS Impact	Can break CSS structure	Keeps layout clean
+Performance	Slightly slower	Lightweight and fast
+Readability	Less clean	Clean and readable
+✅ 👉 Quick Summary
+✔ Fragment allows you to group multiple elements without adding an extra div to the DOM.
+✔ It keeps the DOM clean and avoids unnecessary parent containers.
+✔ You can use either:
+✅ <React.Fragment></React.Fragment> (Full Form)
+✅ <></> (Short Form, Most Used)
+✅ 💯 Quick Interview Answer:
+Q: Why do we use Fragments in React?
+A: We use Fragments to group multiple elements without adding extra nodes (like <div>) to the DOM.
+This helps to keep the HTML structure clean and avoid unnecessary nesting.
