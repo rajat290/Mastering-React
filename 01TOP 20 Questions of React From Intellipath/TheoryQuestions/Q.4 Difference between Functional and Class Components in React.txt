@@ -1,0 +1,39 @@
+ Q.4 Difference between Functional and Class Components in React?
+
+ 👉 What is a Functional Component?
+A Functional Component is a simple JavaScript function that returns JSX (UI elements).
+It is mainly used for presentational purposes, i.e., to display the UI.
+Before React 16.8, functional components did not have state or lifecycle methods, but after the introduction of Hooks, functional components can now have state and lifecycle methods.
+
+go to 4.1 file and see the syntax of Functional Component
+
+Now move to the class Component
+✅ 👉 What is a Class Component?
+A Class Component is a JavaScript ES6 Class that extends from React.Component and must have a render() method that returns JSX (UI elements).
+It has a built-in state object and lifecycle methods like componentDidMount(), componentDidUpdate(), etc.
+Before the introduction of Hooks, Class Components were used for state management, but now Hooks have replaced them
+go to 4.2 file and see the syntax of Functional Component
+✅ 👉 Difference between Functional and Class Components:
+Feature	Functional Component	Class Component
+Definition	A simple JavaScript function.	A JavaScript class that extends React.Component.
+State Management	Uses Hooks (useState) to manage state.	Uses this.state to manage state.
+Props Access	Directly use props as function arguments.	Use this.props to access props.
+Lifecycle Methods	Uses useEffect Hook for lifecycle behavior.	Has built-in lifecycle methods like componentDidMount().
+Boilerplate Code	Very simple and clean syntax.	More complex with this keyword and render method.
+Performance	Slightly faster and lighter.	Slightly heavier due to class overhead.
+Hooks Support	Fully supports Hooks like useState, useEffect, etc.	Does not support Hooks directly.
+Learning Curve	Easier for beginners.	Slightly complex for beginners.
+Recommended?	✅ Highly recommended in modern React.	❌ Not recommended anymore in modern React.
+
+✅ 👉 Why are Functional Components Preferred Now?
+Easier to read and write.
+No need to use this keyword.
+Less boilerplate code.
+With Hooks, you can now manage state and lifecycle in Functional Components.
+React Team also encourages using Functional Components now.
+
+👉 Quick Facts about Functional & Class Components:
+✅ Functional Components are now used 95% of the time in modern React.
+❌ Class Components are becoming obsolete (not recommended now).
+✅ If you want to build a modern React application, always use Functional Components.
+💯 Hooks like useState and useEffect have made Functional Components super powerful.

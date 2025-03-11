@@ -1,0 +1,38 @@
+ What is a Stateful Component in React?
+A Stateful Component is a component that can hold, manage, and update its own state (data).
+It can re-render itself when its state changes.
+Stateful Components are mainly used when you need dynamic content or user interaction like form input, API data, button clicks, etc.
+In Functional Components, we use the useState Hook to manage the state.
+In Class Components, we use this.state to manage the state.
+
+✅ 👉 Difference between Stateful and Stateless Components:
+Feature	Stateful Component	Stateless Component
+Definition	Component that can hold and manage state.	Component that does not hold any state.
+State Management	Uses useState (in functional) or this.state (in class).	Does not have any state.
+Re-rendering	Re-renders when the state changes.	Does not re-render unless props change.
+Use Case	Used when you need dynamic content (e.g., input fields, counters, etc.).	Used when you just want to display static data.
+Hooks Support?	Can use Hooks like useState, useEffect, etc.	Can be converted to Stateful using Hooks.
+Example	Counter, Form, API data, etc.	Heading, Static text, Images, etc.
+
+
+
+✅ 👉 Quick Understanding:
+Stateful Component = Has State (Dynamic Content) 💻🔥
+Stateless Component = No State (Static Content) 💯😎
+
+✅ 👉 Real-Life Example:
+✅ Stateful Component:
+Instagram Likes/Comments Counter → Every time you like a post, the state changes.
+Online Shopping Cart → Adding/removing items changes the cart state.
+✅ Stateless Component:
+Product Description → Static content, no state needed.
+Page Footer/Header → No state, just display static information.
+
+
+✅ 👉 Quick Fact:
+Earlier in React:
+Stateful Components were built using Class Components.
+Stateless Components were built using Functional Components.
+Now in React (after Hooks):
+Functional Components can also manage state using useState Hook. 💯🔥
+

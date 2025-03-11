@@ -1,0 +1,26 @@
+👉 What are Props in React? (Simple Definition)
+
+Props (short form of Properties) are read-only data that you can pass from one component to another in React.
+Props allow you to make your components dynamic and reusable by passing different data.
+Props are like function parameters → You pass data to a component just like you pass arguments to a function.
+Props are immutable → The receiving component cannot modify the props, only the parent component can change it.
+
+👉 Are Props Read-Only in React? (IMPORTANT)
+YES! Props are read-only in React.
+This means that the child component cannot modify the props.
+Only the parent component can modify the props and pass the updated value.
+
+👉 Can We Pass Functions as Props? (Event Handlers)
+👉 YES! You can also pass functions as props to handle events like button click, input change, etc.
+
+✅ 👉 Summary of Props (In Simple Words)
+Feature	Description
+What are Props?	Props (Properties) are data passed from Parent Component to Child Component.
+Can We Modify Props?	❌ No! Props are read-only and cannot be modified by the child component.
+What Can We Pass in Props?	String, Number, Boolean, Array, Object, Function, JSX, etc.
+Purpose of Props?	To make components dynamic and reusable.
+✅ 👉 Real-Life Example of Props:
+Example	Props Usage
+Netflix App	Props: Movie Name, Description, Rating, Thumbnail, etc.
+E-commerce App	Props: Product Name, Price, Image, Add to Cart, etc.
+YouTube App	Props: Video Title, Channel Name, Views, Thumbnail, etc.
