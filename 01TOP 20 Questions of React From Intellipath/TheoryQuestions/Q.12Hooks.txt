@@ -1,0 +1,12 @@
+1. What are Hooks in React? (Easy Definition)
+Hooks are special functions in React that allow you to use state and lifecycle features in functional components without writing a class component.
+
+
+2. Why are Hooks used in React? (with Example)
+Before Hooks, we had to use class components to manage state or lifecycle methods (like componentDidMount, componentDidUpdate, etc.). However, Hooks allow you to use state and lifecycle methods directly in functional components, making the code shorter, cleaner, and easier to understand.
+
+✅ Example:
+
+Imagine a counter application.
+Without Hooks, you would need a class component with this.state and this.setState().
+But with Hooks, you can use useState() to manage the count without using a class
