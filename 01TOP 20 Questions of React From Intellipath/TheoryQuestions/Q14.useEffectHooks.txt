@@ -1,0 +1,17 @@
+Why do we need useEffect?
+In React, when the component renders, you may need to perform some side tasks like fetching data, setting timers, subscribing to services, or manipulating the DOM.
+Without useEffect, you would have needed class lifecycle methods like:
+componentDidMount
+componentDidUpdate
+componentWillUnmount
+
+👉 With useEffect, you can handle all these lifecycle methods in one place!
+
+✅ 2. Real-Life Example of Side Effects
+Example 1:
+Imagine you open YouTube → After 1 second, a notification appears (like "New Video Uploaded").
+That side-effect of displaying a notification AFTER the page loads is handled using useEffect.
+
+
+✅ 3. Practical Example Using useEffect
+👉 Task: Create a counter that automatically updates the document title every time the count changes.
