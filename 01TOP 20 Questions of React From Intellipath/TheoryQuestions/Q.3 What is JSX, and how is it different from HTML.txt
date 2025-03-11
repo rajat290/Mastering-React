@@ -1,0 +1,32 @@
+👉 What is JSX (JavaScript XML)?
+JSX (JavaScript XML) is a syntax extension in React that allows you to write HTML inside JavaScript code.
+It is not a string or HTML file, but a JavaScript code that looks like HTML.
+JSX makes it easy to create React components by using HTML-like syntax mixed with JavaScript.
+React converts JSX into JavaScript behind the scenes using a tool called Babel.
+
+👉 Why do we use JSX?
+It allows writing HTML elements inside JavaScript.
+It makes UI creation easy and readable.
+It improves the development speed by combining JavaScript + HTML.
+It helps React to create Virtual DOM elements quickly.
+
+✅ 👉 Example of JSX:
+🔥 Without JSX:
+const element = React.createElement('h1', {}, 'Hello World');
+🔥 With JSX:
+const element = <h1>Hello World</h1>;
+
+👉 See the difference? In JSX, it looks like HTML but it's actually JavaScript! 💯🔥
+
+✅ 👉 How is JSX different from HTML?
+Feature	   JSX (JavaScript XML)	            HTML (HyperText Markup Language)
+Syntax	    JSX uses JavaScript + HTML syntax.	HTML uses only HTML syntax.
+JavaScript inside	In JSX, you can use JavaScript code inside {}.	In HTML, you cannot use JavaScript directly.
+Class Attribute	In JSX, we use className instead of class.	In HTML, we use class for adding CSS classes.
+Self Closing Tags	JSX requires self-closing tags (like <img />).	HTML does not enforce self-closing tags.
+Babel Required?	Yes, JSX needs Babel to convert JSX to JavaScript.	No Babel is needed in HTML.
+
+✅ 👉 Quick Facts about JSX:
+JSX is not mandatory in React, but highly recommended because it simplifies coding.
+JSX ≠ HTML, it is JavaScript that looks like HTML.
+It gets converted into React.createElement() behind the scenes by Babel.

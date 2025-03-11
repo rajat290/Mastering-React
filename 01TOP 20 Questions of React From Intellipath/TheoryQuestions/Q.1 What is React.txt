@@ -1,0 +1,11 @@
+React js is a javaScript library used to build userInterfaces for webApplication 
+it helps developers to create fast, dynamic and interactive user interfaces without reloading the page 
+
+💻 Example:
+
+When you scroll through Instagram, and without refreshing the page, you see new posts, likes, comments, etc. — This happens because of React.js.
+Similarly, when you book a ride in Uber or Ola, and the ride status changes automatically without refreshing — This is also React.js.
+👉 React focuses only on the View Layer (UI) of an application.
+👉 It uses a concept called Virtual DOM to make web pages faster.
+
+

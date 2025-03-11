@@ -1,0 +1,8 @@
+👉 SPA (Single Page Application) is a web application that loads a single HTML page and dynamically updates content on the page without refreshing the browser.
+👉 In SPA, when you navigate from one page to another (like Home → About → Contact), the browser does not reload — instead, JavaScript handles the navigation and updates the content dynamically.
+👉 This makes the application faster and gives a smooth user experience (like mobile apps).
+
+💻 Example:
+
+Instagram, Facebook, Twitter, LinkedIn, YouTube, Gmail — all are Single Page Applications.
+When you switch tabs like Home, Profile, Messages, Notifications, the page never reloads — instead, the content changes instantly. 🚀
