@@ -4,6 +4,11 @@ Top React-based hashtag#interview questions that can help you ace your career
  2. What is useMemo ? => Use memo in React is a Hook, which is basically used when we want to memorize some perticular values in our programs basically it is used when we want to cached some memory or values , there we use useMemo hook.
  official Deffiniton => useMemo is a React Hook that memoizes (caches) the result of a function call, preventing unnecessary re-calculations between re-renders when the dependencies haven't changed, thus optimizing performance
  3. What are the features of React ?
+ it makes application component based 
+ it makes application fast
+ it is best for the single page application 
+ it updates the Ui without reloading the Page.
+
  4. What is JSX ?
  5. What is DOM ?
  6. What is Virtual Dom ?
