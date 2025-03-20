@@ -1,17 +1,25 @@
 Top React-based hashtag#interview questions that can help you ace your career
 
 1. What is React? React is a JavaScript library for Ui development , it is used because of its component based app development , fast, best for Single page applications and its main feature is it updates the UI without reloading the page . 
+
  2. What is useMemo ? => Use memo in React is a Hook, which is basically used when we want to memorize some perticular values in our programs basically it is used when we want to cached some memory or values , there we use useMemo hook.
- official Deffiniton => useMemo is a React Hook that memoizes (caches) the result of a function call, preventing unnecessary re-calculations between re-renders when the dependencies haven't changed, thus optimizing performance
+ official Deffiniton => useMemo is a React Hook that memoizes (caches) the result of a function call, preventing unnecessary re-calculations between re-renders when the dependencies haven't changed, thus optimizing performance.
+
  3. What are the features of React ?
  it makes application component based 
  it makes application fast
  it is best for the single page application 
  it updates the Ui without reloading the Page.
 
- 4. What is JSX ?
- 5. What is DOM ?
+ 4. What is JSX ? => jsx is nothing it is short of JavaScript XML , it is used to write HTML 
+ Like code into JavaScript .. thats it 
+
+ 5. What is DOM ? 
+ DOM is nothing but Document Object Model , it is used to represent the structure of the HTML document in 
+ the form of a tree structure , it is used to access and modify the HTML document .
+
  6. What is Virtual Dom ?
+ 
  7. What is component life cycle of React class component ?
  8. What are fragments in react ?
  9. What are props in react ?
