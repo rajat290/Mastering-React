@@ -1,6 +1,6 @@
 Top React-based hashtag#interview questions that can help you ace your career
 
-1. What is React?
+1. What is React? React is a JavaScript library for Ui development , it is used because of its component based app development , fast, best for Single page applications and its main feature is it updates the UI without reloading the page . 
  2. What is useMemo ?
  3. What are the features of React ?
  4. What is JSX ?
