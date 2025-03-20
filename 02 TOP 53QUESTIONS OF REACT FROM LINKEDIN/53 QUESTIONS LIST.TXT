@@ -19,8 +19,25 @@ Top React-based hashtag#interview questions that can help you ace your career
  the form of a tree structure , it is used to access and modify the HTML document .
 
  6. What is Virtual Dom ?
- 
+ Virtual Dom is nothing but a lightweight copy of the Dom , it is acctually used to update that perticular section or component of the app which is updated by the user end or from the server end , without reloading the whole page 
+
  7. What is component life cycle of React class component ?
+ 1. constructor()
+ 2. getDerivedStateFromProps()
+ 3. shouldComponentUpdate()
+ 4. render()
+ 5. getSnapshotBeforeUpdate()
+ 6. componentDidUpdate()
+ 7. componentWillUnmount()
+
+
+ 7.1 What is the difference between React and Angular? React is a library for building user interfaces,
+ Angular is a full-fledged framework for building complex web applications.
+ React is used for building reusable UI components, Angular is used for building complex web applications.
+ React is a library that is used for building user interfaces, Angular is a framework that is used for
+ building complex web applications.
+
+ 
  8. What are fragments in react ?
  9. What are props in react ?
  10. What are synthetic events in react ?
