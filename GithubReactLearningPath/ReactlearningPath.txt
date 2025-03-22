@@ -116,3 +116,4 @@ Next Steps for Job Readiness
 ✔️ Solve React-based coding challenges on platforms like LeetCode.
 ✔️ Practice technical interview questions related to React.
 
+okay 
