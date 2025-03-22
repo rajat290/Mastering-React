@@ -1,0 +1,8 @@
+Your task is to create a React application called "Code Review Feedback" that tracks and manages feedback on various aspects of code quality. The component should have upvote and downvote functionality for each aspect, and it must meet all specified requirements.
+
+The Code Review Feedback component displays five aspects: Readability, Performance, Security, Documentation, and Testing.
+
+Each aspect has two buttons labeled "Upvote" and "Downvote" to allow users to vote.
+
+The initial count for upvotes and downvotes for each aspect is set to zero.
+
