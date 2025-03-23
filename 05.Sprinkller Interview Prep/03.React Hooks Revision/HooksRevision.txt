@@ -1,0 +1,89 @@
+Q1: What is the correct way to update state using useState?
+const [count, setCount] = useState(0);
+
+How do you correctly update count?
+A) setCount(count++)
+B) setCount(count + 1)
+C) setCount(prevCount => prevCount + 1)
+D) count = count + 1
+Answer: C) setCount(prevCount => prevCount + 1)
+
+📝 Explanation:
+setCount(prevCount => prevCount + 1) ensures correct state updates, especially when updates are asynchronous.
+
+Q2: What is the purpose of useEffect in React?
+A) To create a new component.
+B) To manage side effects (API calls, subscriptions).
+C) To define routes in React.
+D) To directly modify the DOM.
+
+✅ Answer: B
+📝 Explanation:
+useEffect is used for side effects like:
+✔ Fetching data from an API
+✔ Updating the DOM
+✔ Setting up event listeners
+
+
+Q3: What will be the output of the following useEffect hook?
+
+useEffect(() => {
+  console.log("Component Mounted");
+}, []);
+
+A) Logs "Component Mounted" every time the component re-renders.
+B) Logs "Component Mounted" only once when the component mounts.
+C) Causes an infinite loop.
+D) Logs nothing.
+
+✅ Answer: B
+📝 Explanation:
+
+The empty dependency array [] ensures the effect runs only once on mount.
+
+
+Q4: How does useContext work?
+A) It allows passing props down multiple levels without prop drilling.
+B) It replaces useState.
+C) It re-renders the entire app when state changes.
+D) It is only used for fetching APIs.
+
+✅ Answer: A
+📝 Explanation:
+useContext lets components access global state without passing props manually.
+
+Q5: What does useRef return?
+A) A value that updates the component state.
+B) A mutable object ({ current: value }) that persists across renders.
+C) A function for API calls.
+D) A Redux store.
+
+✅ Answer: B
+📝 Explanation:
+useRef persists values without causing re-renders.
+
+Q6: What is the purpose of useReducer?
+A) To replace Redux.
+B) To handle complex state logic.
+C) To store component styles.
+D) To fetch APIs.
+
+✅ Answer: B
+📝 Explanation:
+✔ useReducer is used for state management with dispatch actions.
+
+Q7: What is the difference between useMemo and useCallback?
+A) useMemo returns a memoized value, useCallback returns a memoized function.
+B) useMemo is used for API calls, useCallback is for styling.
+C) useMemo replaces useEffect, useCallback replaces useState.
+D) No difference.
+
+✅ Answer: A
+📝 Explanation:
+
+useMemo(() => computeValue, [dependencies]) → Optimizes expensive calculations.
+
+useCallback(() => function, [dependencies]) → Prevents function re-creation in child components.
+
+
+
