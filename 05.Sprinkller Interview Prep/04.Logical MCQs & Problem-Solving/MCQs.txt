@@ -1,0 +1,86 @@
+Q1: What will be the output of the following JavaScript code?
+
+console.log(1 + "2" + "3");
+console.log("2" + 3 + 1);
+A) 123 and 231
+B) 6 and 6
+C) 123 and 23
+D) 33 and 6
+
+✅ Answer: A (123 and 231)
+📝 Explanation:
+
+1 + "2" → "12" (Number + String → String Concatenation)
+
+"12" + "3" → "123"
+
+"2" + 3 → "23" (String + Number → String)
+
+"23" + 1 → "231"
+
+Q2: What will be logged in the console?
+
+let x = 0;
+console.log(x++); 
+console.log(++x); 
+console.log(x);
+
+A) 0, 2, 2
+B) 0, 1, 2
+C) 1, 2, 3
+D) 1, 1, 2
+
+✅ Answer: A (0, 2, 2)
+📝 Explanation:
+
+x++ prints 0 (Post-increment: returns value first, then increments).
+
+++x increments first, then returns 2.
+
+console.log(x) prints the final value, 2.
+
+Q3: Find the output of this logical condition.
+
+console.log(!!"false" == !!"true");
+
+A) true
+B) false
+C) undefined
+D) Syntax Error
+
+✅ Answer: A (true)
+📝 Explanation:
+
+"false" and "true" are non-empty strings, so both convert to true when coerced.
+
+!!"false" → true, !!"true" → true, so the comparison results in true.
+
+Q4: What is the output?
+let a = 10;
+let b = (a++, a + 5);
+console.log(b);
+
+A) 10
+B) 15
+C) 16
+D) Error
+
+✅ Answer: C (16)
+📝 Explanation:
+
+(a++, a + 5) → a++ increments a, but the expression returns a + 5.
+
+b = (11, 16), so b = 16.
+
+Q5: How many times will this loop run?
+
+for (let i = 0; i < 5; i += 2) {
+  console.log(i);
+}
+A) 5 times
+B) 2 times
+C) 3 times **D)**Infinite`
+
+✅ Answer: C (3 times)
+📝 Explanation:
+Loop runs for i = 0, 2, 4, then stops when i = 6 (condition fails).

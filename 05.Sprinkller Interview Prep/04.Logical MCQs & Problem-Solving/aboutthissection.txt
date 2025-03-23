@@ -1,0 +1,1 @@
+This section will help you prepare for logical reasoning questions commonly asked in coding assessments. These include pattern recognition, number sequences, conditional statements, and debugging logic.
