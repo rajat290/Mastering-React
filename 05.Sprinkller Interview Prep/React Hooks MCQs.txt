@@ -1,0 +1,46 @@
+Q4: What is the purpose of the useEffect hook?
+my answer => useEffect hook is used to handle the api calls,fetching data, dom updates and event listeners 
+
+A) To handle side effects in functional components.
+B) To create state variables.
+C) To update the component tree.
+D) To directly modify the DOM.
+
+✅ Answer: A
+
+Q5: What will be logged in the console?
+const Example = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Effect triggered");
+  }, []);
+
+  return <button onClick={() => setCount(count + 1)}>Click</button>;
+};
+A) "Effect triggered" only once.
+B) "Effect triggered" on every render.
+C) "Effect triggered" every time count changes.
+D) "Effect triggered" will never run.
+
+✅ Answer: A
+📝 Explanation: The empty dependency array [] means the effect runs only once after the initial render.
+
+Q6: What is the use of useReducer in React?
+A) To handle side effects in functional components.
+B) To create state variables.
+C) To handle complex state changes/logic.
+D) To directly modify the DOM.
+
+✅ Answer: B
+📝 Explanation: useReducer is useful for managing complex state transitions using a reducer function, commonly used in large applications.
+
+Q7: How does useRef differ from useState?
+A) useRef does not cause re-renders, while useState does.
+B) useRef can store values persistently between renders.
+C) Both A and B.
+D) useRef is only used for storing numbers.
+
+✅ Answer: C
+📝 Explanation: useRef is used to store values without causing re-renders, while useState triggers a re-render on updates.
+

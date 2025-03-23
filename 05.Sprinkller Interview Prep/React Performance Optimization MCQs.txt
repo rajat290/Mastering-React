@@ -1,0 +1,34 @@
+Q8: What is React.memo used for?
+React.memo is used for memorizing the components , it prvents unnecessary re rendars by memorizing the components unless its props change 
+
+A) To memoize components and prevent unnecessary re-renders.
+B) To replace state management.
+C) To create functional components.
+D) To modify the virtual DOM manually.
+
+✅ Answer: A
+
+Q9: When should you use useCallback?
+We use , useCallback to memoizes functions , preventing their re-creation unless dependenies change this improves performance in child component
+A) When passing functions to child components to prevent re-creation on every render.
+B) When modifying state.
+C) When fetching API data.
+D) When rendering JSX elements dynamically.
+
+✅ Answer: A
+📝 Explanation: useCallback memoizes functions, preventing their re-creation unless dependencies change. This improves performance in child components.
+
+Q10: What is the difference between useMemo and useCallback?
+useMemo is used to memoize values, while useCallback is used to memoize functions. Both are used to prevent unnecessary re-renders, but they serve different purposes.
+
+A) useMemo memoizes values, while useCallback memoizes functions.
+B) useCallback is faster than useMemo.
+C) useMemo does not take dependencies.
+D) Both are identical.
+
+✅ Answer: A
+📝 Explanation:
+
+useMemo(() => computeValue, [deps]) memoizes a computed value.
+
+useCallback(() => function, [deps]) memoizes a function reference.
