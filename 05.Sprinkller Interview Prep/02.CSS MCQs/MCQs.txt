@@ -1,0 +1,106 @@
+Q.1: What is the Specificity of the following Css Selector?
+div.container .box {
+    color: blue;
+}
+#main {
+    color: red;
+}
+A) div.container .box has higher specificity.
+B) #main has higher specificity.
+C) Both have the same specificity.
+D) Specificity does not matter in CSS.
+✅ Answer: B
+📝 Explanation: The specificity rule is calculated as:
+
+ID Selector (#main) = 100
+
+Class Selector (.box) + Element Selector (div) = 10 + 1 = 11
+Since 100 > 11, #main has higher specificity, so color: red; will be applied.
+
+Q2: Which CSS property is used to create a flex container?
+✅ Answer: C
+📝 Explanation: display: flex; is used to enable the Flexbox layout, allowing child elements to align dynamically.
+
+Q3: In Flexbox, which property controls the alignment of items along the main axis?
+A) align-items
+B) justify-content
+C) flex-wrap
+D) align-content
+
+✅ Answer: B
+📝 Explanation:
+
+justify-content → Aligns items horizontally (row-wise)
+
+align-items → Aligns items vertically (column-wise)
+
+Q4: How do you create a CSS Grid container?
+A) display: flex;
+B) display: block;
+C) display: grid;
+D) display: inline-grid;
+
+✅ Answer: C
+📝 Explanation: display: grid; enables CSS Grid, which allows for two-dimensional layouts (rows & columns).
+
+Q5: What will be the output of the following CSS?
+.container {
+  width: 50vw;
+  height: 100vh;
+}
+A) The container will be 50% of the viewport width and 100% of the viewport height.
+B) The container will be 50% of the parent element's width and 100% of the parent's height.
+C) The container will not be visible.
+D) The container will always have 50px width and 100px height.
+
+✅ Answer: A
+📝 Explanation:
+
+vw → viewport width
+
+vh → viewport height
+So, 50vw means 50% of the total browser width, and 100vh means 100% of the total browser height.
+
+Q6: What does the z-index property do?
+A) Controls the order of overlapping elements.
+B) Sets the transparency of an element.
+C) Applies a zoom effect.
+D) Aligns elements inside a flexbox.
+
+✅ Answer: A
+📝 Explanation:
+
+A higher z-index value means the element appears above others.
+
+position must be absolute, relative, or fixed for z-index to work.
+
+Q7: What will happen in the following transition?
+
+.box {
+  transition: all 0.5s ease-in-out;
+}
+A) The element will transition in and out smoothly over 0.5s.
+B) The element will transition instantly.
+C) The element will only transition out, not in.
+D) The element will remain static.
+
+✅ Answer: A
+📝 Explanation: ease-in-out starts slow, speeds up in the middle, then slows down at the end.
+
+Q8: What is the best way to optimize CSS for performance?
+A) Use inline styles for everything.
+B) Minimize CSS files, avoid unnecessary selectors, and use efficient properties.
+C) Use multiple external CSS files for every page.
+D) Always use !important in styles.
+
+Q8: What is the best way to optimize CSS for performance?
+A) Use inline styles for everything.
+B) Minimize CSS files, avoid unnecessary selectors, and use efficient properties.
+C) Use multiple external CSS files for every page.
+D) Always use !important in styles.
+✅ Answer: B
+📝 Explanation:
+Performance Tips:
+✔ Use efficient selectors (avoid div div div {})
+✔ Minimize file size using CSS minification
+✔ Avoid excessive use of !important
