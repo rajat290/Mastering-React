@@ -1,0 +1,81 @@
+Q1: What is the correct way to fetch data using fetch in React?
+
+useEffect(() => {
+  fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => setData(data))
+    .catch(error => console.error("Error:", error));
+}, []);
+
+What will happen if fetch fails?
+
+A) The component will crash
+B) The .catch() block will handle the error
+C) The .then() will still execute
+D) The error will be ignored
+
+Answer => The .cath() block will handle the error
+
+📝 Explanation:
+
+.catch(error => console.error("Error:", error)) ensures the error is logged, preventing a crash.
+
+Always include error handling when working with APIs.
+
+
+Q2: What will be logged here?
+
+const fetchData = async () => {
+  try {
+    let response = await fetch("https://api.example.com/data");
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
+};
+fetchData();
+
+A) The API response will be logged
+B) A syntax error will occur
+C) The API response will log after a delay
+D) Nothing will happen
+
+✅ Answer: A & C (The API response will be logged after a delay)
+
+📝 Explanation:
+
+fetch returns a Promise, so await ensures we wait for the response before parsing it.
+
+
+📝 Q3: How does useEffect help in API calls?
+useEffect(() => {
+  fetchData();
+}, []);
+What does [] (empty dependency array) mean?
+
+A) API call runs only once on mount
+B) API call runs on every render
+C) API call runs only on button click
+D) It will not run at all
+
+✅ Answer: A (API call runs only once on mount)
+📝 Explanation:
+
+An empty dependency array ([]) ensures the effect runs only on the first render.
+
+If we add dependencies like [someValue], it will re-run when someValue changes.
+
+Q4: What is the advantage of using useSWR or React Query over fetch?
+A) Automatic caching
+B) Automatic retries on failure
+C) Background re-fetching
+D) All of the above
+
+✅ Answer: D (All of the above)
+📝 Explanation:
+
+useSWR and React Query handle caching, background updates, and re-fetching better than fetch.
+
+They optimize performance and improve user experience in real-world applications.
+
