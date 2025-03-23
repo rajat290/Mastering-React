@@ -1,0 +1,55 @@
+Q1: What will be logged here?
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+const fn = outer();
+fn();
+fn();
+
+✅ Answer: B (1, 2)
+📝 Explanation:
+
+outer() returns inner, which has access to count via closure.
+
+Calling fn() twice increments count inside the closure.
+
+📝 Q2: What will be logged here?
+console.log(0 == "0");
+console.log(0 === "0");
+
+A) true, true
+B) true, false
+C) false, true
+D) false, false
+
+✅ Answer: B (true, false)
+📝 Explanation:
+
+== allows type coercion (0 is converted to "0").
+
+=== checks type + value, so 0 (number) is not strictly equal to "0" (string).
+
+📝 Q3: What will be logged here?
+
+setTimeout(() => console.log("A"), 0);
+console.log("B");
+
+
+📝 Q3: What will be logged here?
+
+setTimeout(() => console.log("A"), 0);
+console.log("B");
+A) A B
+B) B A
+C) undefined
+D) Error
+
+✅ Answer: B (B A)
+📝 Explanation:
+
+setTimeout() is asynchronous, so "B" logs first (synchronous execution).

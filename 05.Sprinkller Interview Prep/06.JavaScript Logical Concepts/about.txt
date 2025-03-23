@@ -1,0 +1,1 @@
+This section focuses on closures, event loops, this keyword, and async behavior.
