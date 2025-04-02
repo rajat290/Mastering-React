@@ -13,3 +13,8 @@ const ExpensiveComponent = ({ num }) => {
 
     return <p>squared value: {squaredValue} </p>
 }
+
+// 📌 Key Points:
+// ✅ Prevents unnecessary re-computation.
+// ✅ Runs only if dependencies change (like num).
+
