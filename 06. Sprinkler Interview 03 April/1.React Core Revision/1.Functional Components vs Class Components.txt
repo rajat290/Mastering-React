@@ -1,0 +1,22 @@
+1. What is the difference between functional and class components?
+
+2. Why did React move towards functional components?
+
+3. Can we use hooks inside class components?
+answer=> No we can't
+
+
+
+functional components => are the mordern aproach for making components , functional components are nothing just a Simple javaScript function that returns JSX .
+it does not have its own state or lifecycle methods but for state management they use Hooks like useState , useEffect
+
+example => 
+const Greeting = ({ name }) => HEllo, {name}! </h1>;
+
+class components => is a javaScript class that extends React.component . it can manage its own state and use lifecycle methods ike components DidMount, componentDidUpdate and componentWilUnmount
+
+class GreetingClass extends React.component {
+    render(){
+        return <h1>Hello, {this.props.name}!</h1>;
+    }
+}
