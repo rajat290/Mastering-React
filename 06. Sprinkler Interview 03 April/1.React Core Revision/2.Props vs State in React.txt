@@ -1,2 +1,18 @@
 Props vs State in React
 
+Props => are the input that a component receives from it parent. They are Read-only and cannot be modified inside the component.
+
+State => is an object that stores data inside a component , it can be updated using useState
+for functional componets or this,setState(for class components).
+
+
+🔹 Why It’s Used?
+✅ Props help in passing data from parent to child components.
+✅ State is used to store and manage dynamic data inside a component.
+
+🔹 Key Differences
+Feature	           Props	             State
+Mutable?	❌ No (Read-only)	✅ Yes (Can be changed)
+Where is it used?	Passed from parent to child ||	Managed inside a component
+Can child modify?	❌ No	✅ Yes
+How to update?	Cannot be updated	useState (Functional) / this.setState (Class)
