@@ -16,3 +16,16 @@ Mutable?	❌ No (Read-only)	✅ Yes (Can be changed)
 Where is it used?	Passed from parent to child ||	Managed inside a component
 Can child modify?	❌ No	✅ Yes
 How to update?	Cannot be updated	useState (Functional) / this.setState (Class)
+
+
+Questions may be comes like this 
+and my answers
+🔹 Interview Questions:
+What is the difference between props and state?
+props are used to pass data from parent compon to hild component
+
+Can we change the value of props inside a component?
+No, props are read-only.
+
+When should you use state instead of props?
+When we need to store data dynamically .
