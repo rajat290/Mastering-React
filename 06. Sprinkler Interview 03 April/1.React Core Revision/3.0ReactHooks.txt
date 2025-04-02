@@ -1,0 +1,11 @@
+React Hooks (useState, useEffect, useMemo, useCallback, useRef)
+
+React hooks are used to manage state, perform Api calls and improve performance without using class components
+
+in Simple words Hooks are the special functions in React which allows functional components to manage state and life cycle features .
+
+🔹 Why It’s Used?
+✅ Helps functional components manage state (useState).
+✅ Performs side effects (API calls, event listeners) using useEffect.
+✅ Improves performance with useMemo and useCallback.
+✅ Accesses DOM elements or persists values using useRef. 
