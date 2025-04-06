@@ -1,0 +1,131 @@
+Here's a line-by-line guide to the code:
+
+**Importing Libraries and Assets**
+
+```javascript
+import { useState } from "react";
+```
+
+* This line imports the `useState` hook from the React library. The `useState` hook is used to manage state in functional components.
+
+```javascript
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+```
+
+* These lines import the React logo, Vite logo, and the App CSS file. The logos are not used in this code snippet, but the CSS file is used to style the application.
+
+**Defining Constants**
+
+```javascript
+const OTP_DIGITS_COUNT = 5;
+```
+
+* This line defines a constant `OTP_DIGITS_COUNT` with a value of 5. This constant represents the number of digits in the OTP input field.
+
+**Defining the App Component**
+
+```javascript
+export default function App() {
+```
+
+* This line defines a functional component named `App`. The `export default` statement makes this component the default export of the file.
+
+**Defining State Variables**
+
+```javascript
+const [inputArr, setInputArr] = useState(
+  new Array(OTP_DIGITS_COUNT).fill("")
+);
+```
+
+* This line defines a state variable `inputArr` with an initial value of an array of `OTP_DIGITS_COUNT` empty strings. The `useState` hook is used to manage this state variable.
+
+```javascript
+const [currentIndex, setCurrentIndex] = useState(0);
+```
+
+* This line defines a state variable `currentIndex` with an initial value of 0. This state variable is used to keep track of the current index of the input field.
+
+**Defining Event Handlers**
+
+```javascript
+const handleChange = (index, value) => {
+```
+
+* This line defines an event handler function `handleChange` that takes two arguments: `index` and `value`. This function is called when the user types something into an input field.
+
+```javascript
+const newArr = [...inputArr];
+newArr[index] = value;
+setInputArr(newArr);
+```
+
+* These lines update the `inputArr` state variable by creating a new array, updating the value at the specified `index`, and then setting the new array as the new state.
+
+```javascript
+if (value.length > 0 && index < OTP_DIGITS_COUNT - 1) {
+  setCurrentIndex(index + 1);
+  const inputFields = document.querySelectorAll(".otp");
+  inputFields[index + 1].focus();
+}
+```
+
+* These lines check if the user has typed something into the input field and if the current index is not the last one. If both conditions are true, it updates the `currentIndex` state variable and focuses the next input field.
+
+```javascript
+const handleKeyDown = (index, e) => {
+```
+
+* This line defines an event handler function `handleKeyDown` that takes two arguments: `index` and `e`. This function is called when the user presses a key in an input field.
+
+```javascript
+if (e.key === "Backspace" && inputArr[index] === "") {
+  if (index > 0) {
+    const newArr = [...inputArr];
+    newArr[index - 1] = "";
+    setInputArr(newArr);
+    setCurrentIndex(index - 1);
+    const inputFields = document.querySelectorAll(".otp");
+    inputFields[index - 1].focus();
+  }
+}
+```
+
+* These lines check if the user has pressed the `Backspace` key and if the current input field is empty. If both conditions are true, it updates the `inputArr` state variable by deleting the value at the previous index, updates the `currentIndex` state variable, and focuses the previous input field.
+
+```javascript
+const handleInput = (index, e) => {
+```
+
+* This line defines an event handler function `handleInput` that takes two arguments: `index` and `e`. This function is called when the user types something into an input field.
+
+```javascript
+if (e.target.value.length > 1) {
+  e.target.value = e.target.value.slice(0, 1);
+}
+```
+
+* These lines check if the user has typed more than one character into the input field. If true, it truncates the value to the first character.
+
+```javascript
+const handleFocus = (index) => {
+  setCurrentIndex(index);
+};
+```
+
+* This line defines an event handler function `handleFocus` that takes one argument: `index`. This function is called when an input field is focused. It updates the `currentIndex` state variable to the current index.
+
+**Rendering the App Component**
+
+```javascript
+return (
+  <div className="App">
+    <h1>OTP VALIDATOR</h1>
+    {inputArr.map((input, index) => {
+      return (
+        <input
+          className={`otp ${currentIndex === index ? "active" : ""}`}
+          key={index}
+          type="
