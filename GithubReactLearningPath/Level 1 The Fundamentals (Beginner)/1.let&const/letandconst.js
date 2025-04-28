@@ -8,7 +8,6 @@ if (true) {
 // let user = Rajat;
 // user = vikas;
 // console.log(user);
-nj kj
 
 
 // Reassigning let
