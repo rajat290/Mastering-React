@@ -29,4 +29,3 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 </style>
 
-<!-- okay  -->
