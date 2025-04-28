@@ -36,7 +36,7 @@ function App() {
   //   </>
   // )
 
-  // this is the Dynamic Approach ---->>>>
+  //<<<<<<<<<<<<<<------HARD CODED approach----->>>>>>>>>>>>>>>>>>
   <h1>My percentage Bar </h1>
   const percentages = [10, 30, 50, 70, 90];
   return percentages.map((percentage, index) => (
