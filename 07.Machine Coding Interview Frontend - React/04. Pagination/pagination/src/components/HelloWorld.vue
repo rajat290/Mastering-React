@@ -42,4 +42,3 @@ const count = ref(0)
 }
 </style>
 
-<!-- what is this  -->
