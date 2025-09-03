@@ -234,8 +234,68 @@ export default App;
 
  51. When to use useState and useReducer?
  useState is used when
- you need to update a single state value, while useReducer is used when you need to update multipl
- state values.
+ you need to update a single state value, while useReducer is used when you need to update multiple state values.
+
+Here’s a precise explanation for when to use useState vs useReducer in React
+
+Hook	When to Use	Example Scenario
+useState	- For simple state (single values or small objects).
+- When state updates are straightforward and don’t depend on previous state logic.	Toggle a boolean (isOpen), update input text, or manage a counter.
+useReducer	- For complex state logic.
+- When state depends on previous state or multiple sub-values.
+- When multiple actions can update the state.
+- Makes state management more predictable using a reducer function.	Managing form fields, multi-step forms, or a shopping cart where actions like ADD_ITEM, REMOVE_ITEM, CLEAR_CART are needed.
+
+
+examples ---
+
+
+import React , { useState } from "react" ;
+function Counter() {
+  const [ count, setCount ] = useState(0);
+
+  return (
+    <div>
+     <p> Count: {count} </p>
+     <button onClick={() => sertCount(count + 1 )}> Increment </button>
+     </div>
+  );
+}
+export default Counter;
+
+2. useReducer example
+
+import React , { useReducer } from "react";
+
+const initialState = { count: 0};
+
+function reducer (state,action) {
+  switch (action.type) {
+    case "Increment":
+    return { count: state.count +1 };
+    case  "decrement":
+    return { count : state.count-1 };
+    default:
+    return:
+    return state;
+  }
+}
+
+function Counter () {
+  const [state, dispatch ] = useReducer(reducer, initialState);
+  return (
+    <div>
+    <p> Count: { state.count} </P>
+    <button onClick={() => dispatch({ type: "Increment" })}>Increment</button>
+    <button onClick={() => dispatch ({ type : "Decrement"})}> Decrement</button>
+    </div>
+  );
+}
+
+export default Counter;
+
+
+
 ==================================================================================================================================================
 
 
