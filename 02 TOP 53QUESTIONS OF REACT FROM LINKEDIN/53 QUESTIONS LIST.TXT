@@ -236,13 +236,120 @@ export default App;
  useState is used when
  you need to update a single state value, while useReducer is used when you need to update multipl
  state values.
+==================================================================================================================================================
+
 
  52. What are protected routes in react ?
- Protected routes are routes that require authentication or authorization to access.
+ Protected routes are routes that require authentication or authorization to access. if a user is not logged in or authenticated , they are redirected to login page or another public route 
+  Purpose:
+  To restrict access to sensitive pages (e.g., dashboard, profile, admin panel).
+  To secure your frontend routes based on authentication state.
+How It Works
+
+You maintain an authentication state (e.g., isLoggedIn or token).
+You create a wrapper component (ProtectedRoute) that checks this state.
+
+If the user is authenticated, the route renders the requested component.
+If not, the user is redirected.
+
+Example: Protected Route with React Route
+
+import React from "react" 
+import { Navigate } from "react-router-dom"
+function ProtectedRoute ({ isAuth, children  }) {
+  if (!isAuth) {
+    return <Navigate to = "/login" />;
+  }
+  return children;
+}
+export default ProtectedRoute
+
+
+Usage:
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./Dashboard";
+import Login from "./Login";
+import ProtectedRoute from "./ProtectedRoute";
+
+function App () {
+  const isLoggedIn = !!localstorage.getItem ("token);
+  return (
+    <Router>
+    <Routes>
+    <Route path = "/login" element = {<login />} />
+    <Route 
+    path = "/dashboard"
+    element = {
+      <ProtectedRoute is Auth = {isLoggedIn}>
+      <Dashboard />
+      </ProtectedRoute>
+    }
+    </Routes>
+    </Router>
+  );
+}
+export default App;
+
+Key Points:
+
+1. Protected routes are not about backend security; backend APIs still need server-side authentication.
+
+2. They mainly control the frontend access flow.
+
+3. Can be combined with role-based access for admin/user distinctions
+
+
+
+==================================================================================================================================================
+
+
+
+
+
 
  53. What is react-router has context menu
  React Router has a context menu that allows you to access the current route and other  
  information about the application's routing state.
+
+
+
+
+React router internally uses React Context to store routing info such as 
+ current location ( pathname, search, hash )
+ Navigation methods ( navigate )
+ Route match info 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Follow Alpna P. for related content!
 
